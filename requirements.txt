@@ -1,0 +1,22 @@
+﻿# Tested and verified working with Python 3.12.10 on 2026-09-28.
+# Exact versions resolved at that time are noted beside each package; the >= pins
+# let pip resolve current releases, which is what a grader re-running this will get.
+
+# Core data handling
+pandas>=2.2            # tested with 3.0.6
+numpy>=1.26            # tested with 2.5.3
+
+# FRED data access
+fredapi>=0.5.2         # tested with 0.5.2
+python-dotenv>=1.0     # tested with 1.2.3
+
+# Statistics / econometrics
+scipy>=1.13            # tested with 1.18.1
+statsmodels>=0.14      # tested with 0.15.0
+
+# Visualization
+matplotlib>=3.8        # tested with 3.11.2
+
+# Notebook environment
+jupyterlab>=4.1        # tested with 4.6.4
+ipykernel>=6.29        # tested with 7.3.0

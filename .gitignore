@@ -1,0 +1,51 @@
+# ---- Secrets: never commit ----
+.env
+.env.*
+!.env.example
+*.key
+secrets.json
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# ---- Caches / tooling ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipython/
+
+# ---- Data (cached FRED pulls; re-pullable from the API) ----
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# ---- Generated output ----
+results/figures/*
+!results/figures/.gitkeep
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
